@@ -45,7 +45,7 @@ public class UserController {
         String loginName = user.getLoginName();
         String password = user.getPassword();
 
-        if(!StringUtils.isEmpty(loginName) && !StringUtils.isEmpty(password)){
+        if(StringUtils.isNotEmpty(loginName) && StringUtils.isNotEmpty(password)){
 
             //查询一条数据
             QueryWrapper<User> wrapper  = new QueryWrapper<User>();

@@ -20,7 +20,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Slf4j
 public class MybootApplication {
 
-
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(MybootApplication.class);
         app.setBannerMode(Banner.Mode.OFF);
