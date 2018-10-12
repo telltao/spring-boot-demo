@@ -25,10 +25,10 @@ CREATE TABLE `sys_user` (
   `login_name` varchar(30) DEFAULT NULL COMMENT '登录名',
   `email` varchar(30) DEFAULT NULL COMMENT '邮箱',
   `age` int(2) DEFAULT NULL COMMENT '年龄',
-    `password` varchar(30) DEFAULT NULL COMMENT '密码',
+  `password` varchar(30) DEFAULT NULL COMMENT '密码',
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   `last_login_time` datetime DEFAULT NULL COMMENT '最后登录时间',
-  `status` int(11) DEFAULT NULL COMMENT '状态：0 锁定、 1 正常',
+  `status` int(11) DEFAULT NULL COMMENT '状态：0 启用、 1 禁用',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
 

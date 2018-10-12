@@ -45,8 +45,6 @@
         })
 
         function login(data){
-            debugger;
-
             $.ajax({
                 url: "/login",
                 data: JSON.stringify(data),
@@ -61,7 +59,7 @@
                     }else{
                         layer.msg(data.msg,{icon:2,time:1500});
 
-                        console.log('登录失败了..');
+                        console.log('登录失败了..原因:'+data.msg);
                     }
                 },
                 error:function (){

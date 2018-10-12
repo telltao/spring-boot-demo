@@ -47,7 +47,7 @@ public class User implements Serializable {
 
     /** 创建日期 */
     @TableField(value = "create_time")
-    private String createTime;
+    private Date createTime;
 
     /** 最后一次登录时间*/
     @TableField(value = "last_login_time")
@@ -55,7 +55,7 @@ public class User implements Serializable {
 
     /** 用户状态 0启用 1禁用 */
     @TableField(value = "status")
-    private String status;
+    private Integer status;
 
     public User() {
     }
