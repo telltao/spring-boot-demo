@@ -114,7 +114,7 @@
                 data: JSON.stringify(data.field),
                 type: "post",
                 dataType: "json",
-                contentType:"application/json",
+                /*contentType:"application/json",*/
                 success: function (data) {
                     if(data.msg =='添加成功!' && data.ret == '0') {
                         layer.alert(data.msg, {icon: 6}, function () {

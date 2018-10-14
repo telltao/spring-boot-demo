@@ -87,8 +87,7 @@
 
     //无条件查询
     function ajaxList() {
-        debugger;
-        var loginName = $("input[name='loginName']").val();
+        var loginName = $("input[name='loginname']").val();
         $.ajax({
             url: "/ajaxList/",
             data: {"loginName": loginName},
@@ -101,7 +100,7 @@
                     tableContent += '<tr>';
                     tableContent += '<td><div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id=\'2\'><i class="layui-icon">&#xe605;</i></div></td>';
                     tableContent += '<td>' + data[i].id + '</td>';
-                    tableContent += '<td>' + data[i].loginName + '</td>';
+                    tableContent += '<td>' + data[i].loginname + '</td>';
                     tableContent += '<td>' + data[i].name + '</td>';
                     tableContent += '<td>' + data[i].email + '</td>';
                     tableContent += '<td>' + data[i].age + '</td>';
@@ -143,7 +142,7 @@
             //发异步把用户状态进行更改
             $.ajax({
                 url: "/editStatus/",
-                data: {"id":id,"status":type},
+                data: {"id":id},
                 type: "post",
                 dataType: "json",
                 success: function (data) {
