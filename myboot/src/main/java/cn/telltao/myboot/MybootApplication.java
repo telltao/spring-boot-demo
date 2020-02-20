@@ -26,6 +26,7 @@ public class MybootApplication {
         log.info("*                                                 *");
         log.info("*            PortalApplication is success!        *");
         log.info("*                                                 *");
+        log.info("*                                                 *");
         log.info("***************************************************");
     }
 }
