@@ -17,14 +17,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
         "cn.telltao.myboot.mapper",
         "cn.telltao.myboot.service",
 })
-//使用此注解 输出日志  idea要装lombock插件  链接 https://blog.csdn.net/zhglance/article/details/54931430
 @Slf4j
 public class MybootApplication {
 
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(MybootApplication.class);
-        app.setBannerMode(Banner.Mode.OFF);
-        app.run(args);
+        SpringApplication.run(MybootApplication.class, args);
         log.info("***************************************************");
         log.info("*                                                 *");
         log.info("*            PortalApplication is success!        *");
