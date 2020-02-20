@@ -53,7 +53,7 @@ public class UserController {
             wrapper.eq("password",password);
             User entity = userService.selectOne(wrapper);
             //账户被禁用
-            if(entity.getStatus() == UserStatusEnum.DISABLE.getCode()){
+            if(entity.getStatus().equals(UserStatusEnum.DISABLE.getCode())){
                 ajaxJson.success("该账户已被禁用,请联系管理员!");
                 log.info("用户[{}],登录失败,账户已禁用",entity.getName());
                 return ajaxJson;
